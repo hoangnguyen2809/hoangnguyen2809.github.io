@@ -24,7 +24,8 @@ Volunteer experience
 
 Skills
 ======
-* Programming Languages: C/C++, Python, JavaScript, P4, HTML, CSS
+* Programming Languages: C/C++, Python, Java, P4
+* Web Development: HTML, CSS, JavaScript, Angular
 * Developer Tools: Git, Github, Visual Studio, Visual Studio Code, AWS
 * Soft Skills:
   * Adaptability
