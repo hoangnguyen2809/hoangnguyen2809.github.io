@@ -43,6 +43,7 @@
     padding: 0;
     clear: both;
     list-style-type: none;
+    width: 80%;
   }
 }
 
@@ -50,9 +51,12 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  padding-right: 3em;
+  text-align: center;
 
   &--lg {
-    padding-right: 2em;
+    padding-right: -1em;
     font-weight: 700;
+    text-align: start;
   }
 }
