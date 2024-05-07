@@ -11,54 +11,34 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.S. Computer Science, Simon Fraser University - January 2021
+  * Expected graduation: 2025
+  * Relevant coursework: Operating Systems, Data Structures and Algorithms, Computer Networking, Database Systems
 
-Work experience
+Volunteer experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* December 2023 - Present: Web Development Coordinator
+  * Enactus, Simon Fraser University
+  * Duties includes: Implement BeeKind.Co’s - a user-friendly website, showcasing sustainable candle products and community initiatives.
+  * Website url: [BeeKind](https://thebeekind.company/)
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming Languages: C/C++, Python, JavaScript, P4, HTML, CSS
+* Developer Tools: Git, Github, Visual Studio, Visual Studio Code, AWS
+* Soft Skills:
+  * Adaptability
+  * Problem-Solving
+  * Team Collaboration
+  * Creativity
+* Human Languages:
+  * Vietnamese
+  * English
+  * Chinese
 
-Publications
+Other work experience:
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* December 2022 – February 2023: Waiter 
+  * Pho 101 – Burnaby, BC
+* May 2021 – April 2022: Cook
+  * Viet House - Vancouver, BC
