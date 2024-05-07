@@ -5,7 +5,6 @@ permalink: /projects/
 author_profile: true
 ---
 
-____
 ### ChatGPT Discord Bot (JavaScript, discordjs) 
 April 2024 - Present
 
