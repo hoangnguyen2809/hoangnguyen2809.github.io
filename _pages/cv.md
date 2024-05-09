@@ -24,7 +24,8 @@ Volunteer experience
 
 Skills
 ======
-* Programming Languages: C/C++, Python, Java, P4
+* Programming Languages: C, C++, Python, Java, P4
+* Networking/Cybersecurity tools: Wireshark, TCPdump, Mininet, pcap
 * Web Development: HTML, CSS, JavaScript, Angular
 * Developer Tools: Git, Github, Visual Studio, Visual Studio Code, Android Studio, AWS
 * Operating System: Window, Linux
