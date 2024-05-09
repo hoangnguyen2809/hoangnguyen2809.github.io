@@ -11,6 +11,9 @@ April 2024 - Present
 ### Firewall and Intrusion Detection System (Python, P4)
 January 2024 - April 2024
 
+### Analyze attacks on TCP/IP
+January 2024 - April 2024
+
 ### Network Control Applications using SDN (Python, Mininet)
 January 2024 - April 2024
 
