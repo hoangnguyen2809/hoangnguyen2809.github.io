@@ -21,7 +21,7 @@ repository: "hoangnguyen2809/hoangnguyen2809.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar: "profile.png"
+  avatar: "avatar.jpg"
   name: "Hoang Nguyen"
   pronouns: # example: "she/her"
   bio: "Student at Simon Fraser University"
