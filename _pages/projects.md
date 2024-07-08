@@ -5,58 +5,46 @@ permalink: /projects/
 author_profile: true
 ---
 
-### Webchat (Golang)
+### Chitchat(Golang) [Github](https://github.com/hoangnguyen2809/Chitchat)
 
 June 2024 - Present
 
-### Folder organizer (C++)
+### Folder organizer (C++) [Github](https://github.com/hoangnguyen2809/files-organizer)
 
 May 2024 - May 2024
 
-### ASP.NET Core simple REST API (C#)
-
-May 2024 - May 2024
-
-### ChatGPT Discord Bot (JavaScript, discordjs)
-
-April 2024 - Present
-
-### Firewall and Intrusion Detection System (Python, P4)
+### Firewall and Intrusion Detection System (Python, P4) [Github](https://github.com/hoangnguyen2809/Firewall-IDS)
 
 January 2024 - April 2024
 
-### Analyze attacks on TCP/IP
+### Analyze attacks on TCP/IP [Github](https://github.com/hoangnguyen2809/TCP-Attack-Lab) [Report](https://hoangnguyen2809.github.io/posts/2012/08/blog-post-1/)
 
 January 2024 - April 2024
 
-### Network Control Applications using SDN (Python, Mininet)
+### Network Control Applications using SDN (Python, Mininet) [Github](https://github.com/hoangnguyen2809/471_SDN_project)
 
 January 2024 - April 2024
 
-### Simple Network Telemetry using Remote Procedure Calls (C++)
+### Simple Network Telemetry using Remote Procedure Calls (C++) [Github](https://github.com/hoangnguyen2809/471_RPC)
 
 January 2024 - April 2024
 
-### Socket Programming and TCP Tunnel (C)
+### Socket Programming and TCP Tunnel (C) [Github](https://github.com/hoangnguyen2809/TCP-Daytime-Client-and-Server)
 
 January 2024 - April 2024
 
-### Nuisance Reporting Web (HTML, CSS, JS, Angular)
+### Nuisance Reporting Web (HTML, CSS, JS, Angular) [Github](https://github.com/hoangnguyen2809/Nuisance-Reporting)
 
 September 2023 - December 2023
 
-### Tetris (C++, raylib)
+### Tetris (C++, raylib) [Github](https://github.com/hoangnguyen2809/Tetris)
 
 August 2023 - August 2023
 
-### Sudoku on Android (Java, Android Studio)
+### Sudoku on Android (Java, Android Studio) [Github](https://github.com/hoangnguyen2809/Android-Sudoku)
 
 May 2023 - June 2023
 
-### RISC-V Emulator (C)
-
-September 2022 - December 2022
-
-### School Management System (C++)
+### School Management System (C++) [Github](https://github.com/hoangnguyen2809/SchoolManagementSystem)
 
 May 2020 - August 2020
