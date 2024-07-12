@@ -1,11 +1,11 @@
+---
 title: "Buffer-Overflow Attack Lab (Server Version)"
 date: 2024-07-08
 permalink: /posts/2013/08/blog-post-2/
 tags:
-
-- buffer overflow
-- cyber
-
+  - buffer overflow
+  - cyber
+  - SEED lab
 ---
 
 SEED Labs – Buffer Overflow Attack Lab (Server Version) done by Hoang Nguyen.
