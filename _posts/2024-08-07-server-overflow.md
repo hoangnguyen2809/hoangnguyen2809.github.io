@@ -78,7 +78,7 @@ Software: VirtualBox
 
   - Distance between $ebp and buffer's starting address is : <br>
     0xffffd488 - 0xffffd418 = 112
-  - return address is store 4 bytes above the $ebp, starting from off set 116, ending at offset 120
+  - return address is store 4 bytes above the $ebp, starting from off set 116, ending at offset 120 <br>
     <img src='/images/stackmemorylayout.png'>
 
 - exploit.py file:
