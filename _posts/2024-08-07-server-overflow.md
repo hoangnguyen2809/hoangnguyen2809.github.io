@@ -16,23 +16,23 @@ A buffer overflow occurs when more data is written to a buffer than it can hold,
 
 ## Steps in a Buffer Overflow Attack:
 
-1. Overflowing the Buffer:
+1. **Overflowing the Buffer**:
 
    - An attacker inputs data that exceeds the buffer’s allocated size.
    - For example, if a buffer is allocated 10 bytes of memory but the attacker provides 20 bytes of data, the additional 10 bytes will overflow into adjacent memory.
 
-2. Overwriting the Return Address:
+2. **Overwriting the Return Address**:
 
    - In the stack memory layout, the buffer might be located just below the return address.
    - As the buffer overflows, it can overwrite the return address stored on the stack.
    - The return address is the location the program will jump to after the current function finishes execution.
 
-3. Injecting Malicious Code:
+3. **Injecting Malicious Code**:
 
    - Along with the overflowing data, the attacker includes a new return address that points to their malicious code.
    - The malicious code can be injected into the buffer itself or elsewhere in memory.
 
-4. Executing:
+4. **Executing**:
 
    - When the function attempts to return, it uses the overwritten return address.
    - The CPU jumps to the new address, which now points to the attacker’s code.
@@ -50,3 +50,13 @@ Software: VirtualBox
 ## Task 1: Get Familiar with the Shellcode
 
 - Shellcode is typically used in code injection attacks. It is basically a piece of code that launches a shell, and is usually written in assembly languages
+
+- Modified shellcode to delete _important.txt_:
+
+  - 32-bit version:
+    <img src='/images/shellcoderemove32.png'>
+
+  - 64-version:
+    <img src='/images/shellcoderemove64.png'>
+
+## Task 2: Level-1 Attack
