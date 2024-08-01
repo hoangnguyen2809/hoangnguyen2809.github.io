@@ -84,5 +84,5 @@ Software: VirtualBox
 - exploit.py file:
   <img src='/images/exploit1file.png'>
 
-- result:
+- As result, we succeed getting root shell on the target server:
   <img src='/images/exploit1succeed.png'>
