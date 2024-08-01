@@ -44,6 +44,7 @@ More information on [SEED Buffer Overflow Attack](https://seedsecuritylabs.org/L
 
 ### Tools
 
+Programming language: python, C
 Tools used in this lab: scapy, Wireshark <br>
 Software: VirtualBox
 
@@ -59,4 +60,12 @@ Software: VirtualBox
   - 64-version:
     <img src='/images/shellcoderemove64.png'>
 
+## The Vulnerable Program Memory layout
+
+<img src='/images/stackfile.png'>
+- stack.c reads data from standard input then passes data to another buffer in function bof(). The original input can have a maximum length of 517 bytes, but the buffer in bof() is only 200 bytes long. Buffer overflow will occur.
+<img src='/images/stackmemorylayout.png'>
 ## Task 2: Level-1 Attack
+
+- After turning off address randomization countermeasure with:
+  `$ sudo /sbin/sysctl -w kernel.randomize_va_space=0`
