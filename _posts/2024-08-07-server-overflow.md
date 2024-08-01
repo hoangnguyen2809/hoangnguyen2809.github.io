@@ -64,8 +64,18 @@ Software: VirtualBox
 
 <img src='/images/stackfile.png'>
 - stack.c reads data from standard input then passes data to another buffer in function bof(). The original input can have a maximum length of 517 bytes, but the buffer in bof() is only 200 bytes long. Buffer overflow will occur.
-<img src='/images/stackmemorylayout.png'>
+
 ## Task 2: Level-1 Attack
 
-- After turning off address randomization countermeasure with:
+- After turning off address randomization countermeasure with: <br>
   `$ sudo /sbin/sysctl -w kernel.randomize_va_space=0`
+
+- We send benign message to our first target on 10.9.0.5: `echo hello | nc 10.9.0.5 9090`
+- Message returned by container:
+  <img src='/images/benignreturn.png'>
+
+- Based on figure 1 and the message returned by the container, we can tell that:
+  - Distance between $ebp and buffer's starting address is : <br>
+    0xffffd488 - 0xffffd418 = 112
+  - return address is store 4 bytes above the $ebp, starting from off set 116, ending at offset 120
+  - <img src='/images/stackmemorylayout.png'>
