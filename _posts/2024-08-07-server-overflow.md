@@ -74,15 +74,23 @@ Software: VirtualBox
 - Message returned by container:
   <img src='/images/benignreturn.png'>
 
-- Based on figure 1 and the message returned by the container, we can tell that:
+- Based on the message returned by the container, we can tell that:
 
   - Distance between $ebp and buffer's starting address is : <br>
     0xffffd488 - 0xffffd418 = 112
-  - return address is store 4 bytes above the $ebp, starting from off set 116, ending at offset 120 <br>
+  - return address starting from offset 116, ending at offset 120 and located at 0xffffd488+4 <br>
+  - the first address that we can jump too will be 0xffffd488+8
     <img src='/images/stackmemorylayout.png'>
 
 - exploit.py file:
   <img src='/images/exploit1file.png'>
 
+  - The shellcode is put at the end of badfile.
+  - The size of the shellcode in this 32-bit version is 136 bytes, so we can tell that the shellcode is located within the offset [380-516]
+  - We want to replace the original return address that is located at offset[116-120] with our desired return address.
+  - Since the first address we can jump to is 0xffffd488+8, any number within range[8-264] will work well in our case. I chose 200.
+
 - As result, we succeed getting root shell on the target server:
   <img src='/images/exploit1succeed.png'>
+
+## Task 3: Level-2 Attack
