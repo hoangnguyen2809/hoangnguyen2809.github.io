@@ -90,7 +90,7 @@ Software: VirtualBox
   - We want to replace the original return address that is located at offset[116-120] with our desired return address.
   - Since the first address we can jump to is 0xffffd488+8, any number within range[8-265] will work well in our case. I chose 200.
 
-- As result, we succeed getting root shell on the target server:
+- As result, we succeed getting root shell on the target server 10.9.0.5:
   <img src='/images/exploit1succeed.png'>
 
 ## Task 3: Level-2 Attack
@@ -100,8 +100,12 @@ Software: VirtualBox
   <img src='/images/benignreturn2.png'>
   <img src='/images/stack2memorylayout.png'>
 - exploit2.py file: <br>
+  <img src='/images/exploit2file.png'>
 
   - The shellcode is still put at the end of badfile.
   - The size of shellcode is still 136 bytes, and lies within the offset [381-517]
-  - Using the hint that the range of the buffer size on target server is [100-300] bytes, we can tell that range of NOP will be from [300-381]
-  - So we would want to spray the first 320 bytes (extra 20 for overhead) of the badfile with the desired return address so that when overflow the buffer at target server, it will overwrite the original return address
+  - Using the hint that the range of the buffer size on target server is [100-300] bytes, we can tell that range of NOP will be from [300-381]. I chose the return address as 0xffffd3e8 + 350
+  - So we would want to spray the first 320 bytes (extra 20 for overhead) of the badfile with the desired return address so that when overflow the buffer at target server, it will overwrite the original return address.
+
+- As result, we succeed getting root shell on the target server 10.9.0.5:
+  <img src='/images/exploit2succeed.png'>
