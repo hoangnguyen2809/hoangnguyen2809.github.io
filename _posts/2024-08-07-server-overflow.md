@@ -98,14 +98,16 @@ Software: VirtualBox
 - We send benign message to our first target on 10.9.0.6: `echo hello | nc 10.9.0.6 9090`
 - Message returned by container:
   <img src='/images/benignreturn2.png'>
-  <img src='/images/stack2memorylayout.png'>
 - exploit2.py file: <br>
   <img src='/images/exploit2file.png'>
 
   - The shellcode is still put at the end of badfile.
-  - The size of shellcode is still 136 bytes, and lies within the offset [381-517]
+  - The size of shellcode is still 136 bytes, and lies within the offset [381-517] <br>
+    <img src='/images/stack2memorylayout.png'>
   - Using the hint that the range of the buffer size on target server is [100-300] bytes, we can tell that range of NOP will be from [300-381]. I chose the return address as 0xffffd3e8 + 350
   - So we would want to spray the first 320 bytes (extra 20 for overhead) of the badfile with the desired return address so that when overflow the buffer at target server, it will overwrite the original return address.
 
 - As result, we succeed getting root shell on the target server 10.9.0.5:
   <img src='/images/exploit2succeed.png'>
+
+## Task 4: Level-3 Attack
