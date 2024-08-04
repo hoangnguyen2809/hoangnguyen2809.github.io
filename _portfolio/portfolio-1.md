@@ -88,4 +88,4 @@ These tasks provided a comprehensive understanding of network attack mechanisms 
 task2.py: Scapy script for TCP RST attack. <br>
 task3.py: Scapy script for TCP session hijacking. <br>
 Files are available [Github](https://github.com/hoangnguyen2809/TCP-Attack-Lab) <br>
-Report: Detailed instructions, results, and analysis of the tasks at [REPORT](https://hoangnguyen2809.github.io/posts/2012/08/blog-post-1/)
+Report: Detailed instructions, results, and analysis of the tasks at [REPORT](https://hoangnguyen2809.github.io/posts/2024/04/blog-post-4/)
