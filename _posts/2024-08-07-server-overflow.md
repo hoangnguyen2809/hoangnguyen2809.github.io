@@ -107,7 +107,7 @@ Software: VirtualBox
   - Using the hint that the range of the buffer size on target server is [100-300] bytes, we can tell that range of NOP will be from [300-381]. I chose the return address as 0xffffd3e8 + 350
   - So we would want to spray the first 320 bytes (extra 20 for overhead) of the badfile with the desired return address so that when overflow the buffer at target server, it will overwrite the original return address.
 
-- As result, we succeed getting root shell on the target server 10.9.0.5:
+- As result, we succeed getting root shell on the target server 10.9.0.6:
   <img src='/images/exploit2succeed.png'>
 
 ## Task 4: Level-3 Attack
