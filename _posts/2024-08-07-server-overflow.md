@@ -133,7 +133,7 @@ Software: VirtualBox
 
   - Based on the distace between $rbp and &buffer, we know that size of buffer is ~208 bytes.
   - The size of the shellcode in this 32-bit version is 165 bytes.
-  - We will put the shellcode in the beginning of the buffer, start value can be vary from [0-43]. I chose 8.
+  - We will put the shellcode in the beginning of the buffer, start value can be vary from [0-43]. I chose 8. <br>
     <img src='/images/badfilelayout64.png'>
   - The desired return address will now be the begining of the buffer, so the NOP will take us to the shellcode.
 
