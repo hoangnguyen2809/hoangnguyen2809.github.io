@@ -70,7 +70,7 @@ Software: VirtualBox
 - After turning off address randomization countermeasure with: <br>
   `$ sudo /sbin/sysctl -w kernel.randomize_va_space=0`
 
-- We send benign message to our first target on 10.9.0.5: `echo hello | nc 10.9.0.5 9090`
+- We send benign message to our target on 10.9.0.5: `echo hello | nc 10.9.0.5 9090`
 - Message returned by container:
   <img src='/images/benignreturn.png'>
 
@@ -86,7 +86,7 @@ Software: VirtualBox
   <img src='/images/exploit1file.png'>
 
   - The shellcode is put at the end of badfile.
-  - The size of the shellcode in this 32-bit version is 136 bytes, so we can tell that the shellcode is located within the offset [381-517]
+  - The size of the shellcode in this 32-bit version is 136 bytes (generate shellcode and check its size using `ls -l`), so we can tell that the shellcode is located within the offset [381-517]
   - We want to replace the original return address that is located at offset[116-120] with our desired return address.
   - Since the first address we can jump to is 0xffffd488+8, any number within range[8-265] will work well in our case. I chose 200.
 
@@ -95,7 +95,7 @@ Software: VirtualBox
 
 ## Task 3: Level-2 Attack
 
-- We send benign message to our first target on 10.9.0.6: `echo hello | nc 10.9.0.6 9090`
+- We send benign message to our target on 10.9.0.6: `echo hello | nc 10.9.0.6 9090`
 - Message returned by container:
   <img src='/images/benignreturn2.png'>
 - exploit2.py file: <br>
@@ -111,3 +111,30 @@ Software: VirtualBox
   <img src='/images/exploit2succeed.png'>
 
 ## Task 4: Level-3 Attack
+
+- In this task, we switch to a 64-bit server program
+- We send benign message to our target on 10.9.0.7: `echo hello | nc 10.9.0.6 9090`
+- Message returned by container:
+  <img src='/images/benignreturn3.png'>
+- Based on the result returned by the container, we can tell that:
+
+  - Distance between $rbp and buffer's starting address is : <br>
+    0x00007fffffffe230 - 0x00007fffffffe160 = 208
+  - return address starting from offset 216, ending at offset 224 and located at 0x00007fffffffe230+8 <br>
+
+#### Challenge in 64-bits server program:
+
+- The 64-bit version is more difficult than the 32-bit version, because we have to avoid zeros in the payload.
+- When _strcpy()_ copies a string, it will treat zeros as the end of the string. Therefore, avoiding zeros in the payload is necessary to successfully overflow the buffer.
+- We overcome this challenge by **realocating the shellcode to the place before the return address.**
+
+- exploit.py file: <br>
+  <img src='/images/exploit3file.png'>
+
+  - Based on the distace between $rbp and &buffer, we know that size of buffer is ~208 bytes.
+  - The size of the shellcode in this 32-bit version is 165 bytes.
+  - We will put the shellcode in the beginning of the buffer, start value can be vary from [0-43]. I chose 8.
+    <img src='/images/badfilelayout64.png'>
+
+- As result, we succeed getting root shell on the target server 10.9.0.6:
+  <img src='/images/exploit3succeed.png'>
