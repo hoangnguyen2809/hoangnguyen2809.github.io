@@ -135,6 +135,7 @@ Software: VirtualBox
   - The size of the shellcode in this 32-bit version is 165 bytes.
   - We will put the shellcode in the beginning of the buffer, start value can be vary from [0-43]. I chose 8.
     <img src='/images/badfilelayout64.png'>
+  - The desired return address will now be the begining of the buffer, so the NOP will take us to the shellcode.
 
-- As result, we succeed getting root shell on the target server 10.9.0.6:
+- As result, we succeed getting root shell on the target server 10.9.0.7:
   <img src='/images/exploit3succeed.png'>
