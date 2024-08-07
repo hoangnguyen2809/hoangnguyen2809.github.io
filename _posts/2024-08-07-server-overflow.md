@@ -173,7 +173,7 @@ Software: VirtualBox
 ## Task 6: Experimenting with the Address Randomization
 
 - In this task, we turn on Address Space Layout Randomization to see how it affects the attack.
-  ` $ sudo /sbin/sysctl -w kernel.randomize_va_space=2`
+  `$ sudo /sbin/sysctl -w kernel.randomize_va_space=2`
 
 - Now, sending benign message to target 10.9.0.5 will get us different addresses everytime:
   <img src='/images/addressrng.png'>
