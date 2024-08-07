@@ -139,3 +139,33 @@ Software: VirtualBox
 
 - As result, we succeed getting root shell on the target server 10.9.0.7:
   <img src='/images/exploit3succeed.png'>
+
+## Task 5: Level-4 Attack
+
+- This time, the buffer size at target server is much smaller. Such that the shellcode cannot fit inside buffer.
+- As usualy, we send benign message to our target on 10.9.0.8: `echo hello | nc 10.9.0.6 9090`
+- Message returned by container:
+  <img src='/images/benignreturn4.png'>
+- Based on the result returned by the container, we can tell that:
+
+  - Distance between $rbp and &buffer starting address is: <br>
+    0x00007fffffffe1f0 - 0x00007fffffffe190 = 96
+  - return address starting from offset 96 + 8 = 104, and ending at offset 112
+
+- Observation:
+
+  - The shellcode is 165 bytes, meanwhile buffer is only ~96 bytes. So we cannot place it before the return address address due to the lack of space.
+  - We cannot place the shellcode after the return address either because data placed after it will not copied into the stack via _strcpy()_
+
+- Inside main() function, there is a buffer str[]. Whatever we put in badfile is first stored in this buffer, and then is copied into the foo() functions's buffer of a smaller size, causing buffer overflow. Since we cannot store the shellcode inside the foo() function's buffer, we will use str[] inside main to execute our shellcode.
+  <img src='/images/stack4memorylayout.png'>
+
+- exploit.py file: <br>
+  <img src='/images/exploit4file.png'>
+
+  - The shellcode is put at the end of badfile.
+  - The desired return address will point to the str[] inside main, not the buffer inside bof() like the previous attacks.
+  - I tried add numerous number of bytes from [500:2000] to the original return address. And 1300 works.
+
+- As result, we succeed getting root shell on the target server 10.9.0.8:
+  <img src='/images/exploit4succeed.png'>
