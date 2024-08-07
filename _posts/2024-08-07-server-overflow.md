@@ -171,3 +171,14 @@ Software: VirtualBox
   <img src='/images/exploit4succeed.png'>
 
 ## Task 6: Experimenting with the Address Randomization
+
+- In this task, we turn on Address Space Layout Randomization to see how it affects the attack.
+  ` $ sudo /sbin/sysctl -w kernel.randomize_va_space=2`
+
+- Now, sending benign message to target 10.9.0.5 will get us different addresses everytime:
+  <img src='/images/addressrng.png'>
+  - ASLR makes buffer overflow attack more difficult because the return address and the address where the shellcode resides change each time the program runs, it is hard for the attacker to overwrite the return address accuarately and predict where their malicious payload needs to be placed.
+
+## Task 7: Experienting with other Countermeasures
+
+### Task 7.a: StackGuard Protection
