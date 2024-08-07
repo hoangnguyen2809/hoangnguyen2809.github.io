@@ -45,7 +45,7 @@ More information on [SEED Buffer Overflow Attack](https://seedsecuritylabs.org/L
 ### Tools
 
 Programming language: python, C <br>
-Tools used in this lab: scapy, Wireshark <br>
+Tools used in this lab: gdb, hexcalc <br>
 Software: VirtualBox
 
 ## Task 1: Get Familiar with the Shellcode
@@ -169,3 +169,5 @@ Software: VirtualBox
 
 - As result, we succeed getting root shell on the target server 10.9.0.8:
   <img src='/images/exploit4succeed.png'>
+
+## Task 6: Experimenting with the Address Randomization
