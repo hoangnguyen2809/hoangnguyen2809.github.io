@@ -5,15 +5,19 @@ permalink: /projects/
 author_profile: true
 ---
 
+### Producer-Consumer Problem (Distributed Systems) [Github](https://github.com/hoangnguyen2809/producer_consumer)
+
+Simon Fraser University, CMPT 431 - Fall 2024
+
 ### Buffer-Overflow Attack Lab (Server Version) [GitHub](https://github.com/hoangnguyen2809/SEED_buffer_overflow) [Report](https://hoangnguyen2809.github.io/posts/2024/07/blog-post-5/)
 
 ### Chitchat(Golang) [Github](https://github.com/hoangnguyen2809/Chitchat)
 
-June 2024 - Present
+June 2024
 
 ### Folder organizer (C++) [Github](https://github.com/hoangnguyen2809/files-organizer)
 
-May 2024 - May 2024
+May 2024
 
 ### Firewall and Intrusion Detection System (Python, P4) [Github](https://github.com/hoangnguyen2809/Firewall-IDS)
 
