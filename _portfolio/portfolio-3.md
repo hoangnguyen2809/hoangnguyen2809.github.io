@@ -1,6 +1,6 @@
 ---
 title: "Botium Toys Security Audit"
-excerpt: "Conducted a comprehensive internal security audit on Botium Toys, a simulated toy company, as part of Google's Cybersecurity Certificate program. <br /><img src='/hoangnguyen2809.github.io/images/audit.png'>"
+excerpt: "Conducted a comprehensive internal security audit on Botium Toys, a simulated toy company, as part of Google's Cybersecurity Certificate program. <br /><img src='/images/audit.png'>"
 collection: portfolio
 ---
 
