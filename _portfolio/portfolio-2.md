@@ -1,12 +1,14 @@
 ---
 title: "Programmable Network Switch Implementation Using P4"
-excerpt: "Implemented network functionalities using the P4 programming language <br /><img src='/images/ids.png'>"
+excerpt: "Implemented network functionalities using the P4 programming language <br />"
 collection: portfolio
 ---
 
 # Overview
 
 Implemented network functionalities using the P4 programming language, including a Layer 2 (L2) firewall and an Intrusion Detection System (IDS). The project involved setting up a programmable network environment, experimenting with the P4 language, and developing control plane programs.
+
+<img src='/images/ids.png'>
 
 ## Objectives
 

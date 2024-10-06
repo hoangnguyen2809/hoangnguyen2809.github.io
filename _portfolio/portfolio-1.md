@@ -1,12 +1,14 @@
 ---
 title: "Network Security Attacks and Countermeasures"
-excerpt: "SEED Lab – TCP/IP Attack Lab done by Hoang Nguyen.<br/><img src='/images/nwdiagram.png'>"
+excerpt: "SEED Lab – TCP/IP Attack Lab done by Hoang Nguyen.<br/>"
 collection: portfolio
 ---
 
 # Overview
 
 Conducted a series of network security attacks and countermeasures as part of an in-depth lab exercise. These tasks provided hands-on experience with TCP SYN Flooding, TCP RST attacks, and TCP Session Hijacking using tools such as Netwox, Wireshark, and Scapy. This portfolio entry details the process, results, and key learnings from these tasks.
+
+<img src='/images/nwdiagram.png'>
 
 ## Task 1: TCP SYN Flooding Attack
 
