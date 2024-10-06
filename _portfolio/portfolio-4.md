@@ -1,6 +1,6 @@
 ---
 title: "NIST CF Security Incident Report"
-excerpt: "Applied the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF) to conduct a mock incident report on DDoS attack, as part of Google's Cybersecurity Certificate program. <br /><img src='/images/incident-rp.png'>"
+excerpt: "Applied the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF) to conduct a mock incident report on DDoS attack, as part of Google's Cybersecurity Certificate program. <br /><img src='/images/in-re.png'>"
 collection: portfolio
 ---
 
@@ -50,7 +50,7 @@ Use the CSF to navigate through the different steps of analyzing this cybersecur
 - Gained a deeper understanding of the critical role of firewall configurations, traffic monitoring, and incident response in mitigating cybersecurity threats.
 - Further solidifying my ability to analyze and handle cybersecurity incidents using the NIST CSF framework
 
-<br><br>
+<br>
 <a href="https://hoangnguyen2809.github.io/files/Incident-report-analysis.pdf" download="Incident-report-analysis.pdf">
 Download Incident Report
 </a>
