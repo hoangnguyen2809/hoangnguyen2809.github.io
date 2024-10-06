@@ -1,49 +1,53 @@
 ---
-title: "Botium Toys Security Audit"
-excerpt: "Conducted a comprehensive internal security audit on Botium Toys, a simulated toy company, as part of Google's Cybersecurity Certificate program. <br/>"
+title: "Memory Exploitation and Defense Evasion"
+excerpt: "SEED Lab – Buffer Overflow Attack Lab (Server version) done by Hoang Nguyen <br/>"
 collection: portfolio
 ---
 
 # Overview
 
-Conducted a thorough security audit for Botium Toys, a simulated company, by reviewing the scope, goals, and risk assessment report as part of Google's Cybersecurity Certificate program.
+This lab involved performing a buffer overflow attack, where I explored the vulnerabilities caused by writing excess data into buffers beyond their capacity. I applied this to both 32-bit and 64-bit programs, analyzing the stack memory layout and exploiting the overflow to gain root access.
 
-## Objective
+## Lab Environment
 
-- Assess IT-managed assets and review risk assessment reports.
-- Complete the controls and compliance checklist to evaluate security controls.
-- Understand the importantce of security audits - ensure that security checks are made, to monitor for threats, risks, or vulnerabilities that can affect an organization’s business continuity and critical assets.
+The lab was conducted on a SEED Ubuntu 20.04 virtual machine provided by SEED Labs, where each server program had a buffer overflow vulnerability. This environment simulated real-world scenarios, and tasks progressively increased in difficulty as buffer sizes and memory layouts changed.
 
-## Scenario
+## Tasks Performed
 
-Botium Toys is a small U.S. business that develops and sells toys. The business has a single physical location, which serves as their main office, a storefront, and warehouse for their products. However, Botium Toy’s online presence has grown, attracting customers in the U.S. and abroad. As a result, their information technology (IT) department is under increasing pressure to support their online market worldwide.
+### Task 1: Familiarization with Shellcode
 
-The manager of the IT department has decided that an internal IT audit needs to be conducted. She's worried about maintaining compliance and business operations as the company grows without a clear plan. She believes an internal audit can help better secure the company’s infrastructure and help them identify and mitigate potential risks, threats, or vulnerabilities to critical assets. The manager is also interested in ensuring that they comply with regulations related to internally processing and accepting online payments and conducting business in the European Union (E.U.).
+- Modified and injected shellcode to delete sensitive file.
 
-The IT manager starts by implementing the National Institute of Standards and Technology Cybersecurity Framework (NIST CSF), establishing an audit scope and goals, listing assets currently managed by the IT department, and completing a risk assessment. The goal of the audit is to provide an overview of the risks and/or fines that the company might experience due to the current state of their security posture.
+### Task 2: Level-1 Attack (32-bit Program)
 
-## Key Activities
+- Identified buffer memory boundaries and adjusted the return address to jump to the malicious code.
+- Successfully gained root access on a 32-bit target server.
 
-1. Review Botium Toys: Scope, goals, and risk assessment report, with a focus on:
+### Task 3: Level-2 Attack
 
-   - The assets currently managed by the IT department
-   - The bullet points under “Additional comments” in the Risk assessment section
+- Conducted further exploitation by fine-tuning return addresses and memory layouts.
+- Used NOP sleds to guide execution to the shellcode, gaining root access again.
 
-2. Used the Controls Categories document to assess security posture and ensure compliance.
-3. Completed a comprehensive compliance checklist, identifying key security gaps
+### Task 4: Level-3 Attack (64-bit Program)
 
-## Results
+- Overcame additional challenges with null bytes in 64-bit architecture, which required relocating shellcode.
+- Successfully relocated the shellcode and exploited the vulnerability in a 64-bit server program, gaining root access.
 
-Successfully completed the security audit, providing a detailed compliance checklist and actionable recommendations to improve the company's security posture. <br>
-<a href="https://hoangnguyen2809.github.io/files/Controls-and-compliance-checklist.pdf" download="Controls-and-compliance-checklist.pdf">
-Download Checklist
-</a>
+### Task 5: Level-4 Attack (Small Buffer)
 
-<br>
-This project enhanced my understanding of IT asset management and security compliance. I plan to continue developing my auditing and risk assessment skills.
+- Faced the challenge of exploiting a program where the buffer was smaller than the shellcode size. Instead of injecting the shellcode into the vulnerable function's buffer, I exploited a larger buffer in the main() function.
+- Adjusted the return address to point to this alternative buffer, successfully executing the shellcode and obtaining root privileges.
 
-## Resources
+### Task 6: Experimenting with Address Randomization
 
-[Botium Toys: Scope, goals, and risk assessment report](https://docs.google.com/document/d/1s2u_RuhRAI40JSh-eZHvaFsV1ZMxcNSWXifHDTOsgFc/template/preview#heading=h.evidx83t54sc)
+- Investigated how turning on Address Space Layout Randomization (ASLR) impacts the predictability of memory addresses, making exploitation significantly more challenging.
 
-[Control categories](https://docs.google.com/document/d/1HsIw5HNDbRXzW7pmhPLsK06B7HF-KMifENO_TlccbSU/template/preview)
+## Outcome
+
+- Successfully exploited multiple levels of buffer overflow vulnerabilities in both 32-bit and 64-bit server programs.
+- Developed a strong understanding of buffer overflow attacks, shellcode injection, and various stack-based exploit techniques.
+- Gained practical experience with countermeasures like ASLR, Non-executable Stack, and StackGuard, understanding their impact on the success of attacks.
+
+## Supporting Documents:
+
+[REPORT](https://hoangnguyen2809.github.io/posts/2024/07/blog-post-5/)

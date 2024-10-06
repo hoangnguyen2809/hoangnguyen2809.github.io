@@ -1,60 +1,49 @@
 ---
-title: "NIST CF Security Incident Report"
-excerpt: "Applied the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF) to conduct a mock incident report on DDoS attack, as part of Google's Cybersecurity Certificate program. <br/>"
+title: "Botium Toys Security Audit"
+excerpt: "Conducted a comprehensive internal security audit on Botium Toys, a simulated toy company, as part of Google's Cybersecurity Certificate program. <br/>"
 collection: portfolio
 ---
 
 # Overview
 
-Conducted a mock incident report analyzing a Distributed Denial of Service (DDoS) attack on a multimedia company. The analysis was conducted using the NIST Cybersecurity Framework (CSF), a widely adopted standard that helps organizations manage and mitigate cybersecurity risks. In this report, I identified key security vulnerabilities, developed a protection and detection strategy, and formulated an incident response and recovery plan.
+Conducted a thorough security audit for Botium Toys, a simulated company, by reviewing the scope, goals, and risk assessment report as part of Google's Cybersecurity Certificate program.
 
 ## Objective
 
-- Create a plan to improve the company’s network security, following the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
-- Navigate through the different steps of analyzing the cybersecurity event and integrate analysis into a general security strategy
+- Assess IT-managed assets and review risk assessment reports.
+- Complete the controls and compliance checklist to evaluate security controls.
+- Understand the importantce of security audits - ensure that security checks are made, to monitor for threats, risks, or vulnerabilities that can affect an organization’s business continuity and critical assets.
 
 ## Scenario
 
-You are a cybersecurity analyst working for a multimedia company that offers web design services, graphic design, and social media marketing solutions to small businesses. Your organization recently experienced a DDoS attack, which compromised the internal network for two hours until it was resolved.
+Botium Toys is a small U.S. business that develops and sells toys. The business has a single physical location, which serves as their main office, a storefront, and warehouse for their products. However, Botium Toy’s online presence has grown, attracting customers in the U.S. and abroad. As a result, their information technology (IT) department is under increasing pressure to support their online market worldwide.
 
-During the attack, your organization’s network services suddenly stopped responding due to an incoming flood of ICMP packets. Normal internal network traffic could not access any network resources. The incident management team responded by blocking incoming ICMP packets, stopping all non-critical network services offline, and restoring critical network services.
+The manager of the IT department has decided that an internal IT audit needs to be conducted. She's worried about maintaining compliance and business operations as the company grows without a clear plan. She believes an internal audit can help better secure the company’s infrastructure and help them identify and mitigate potential risks, threats, or vulnerabilities to critical assets. The manager is also interested in ensuring that they comply with regulations related to internally processing and accepting online payments and conducting business in the European Union (E.U.).
 
-The company’s cybersecurity team then investigated the security event. They found that a malicious actor had sent a flood of ICMP pings into the company’s network through an unconfigured firewall. This vulnerability allowed the malicious attacker to overwhelm the company’s network through a distributed denial of service (DDoS) attack.
+The IT manager starts by implementing the National Institute of Standards and Technology Cybersecurity Framework (NIST CSF), establishing an audit scope and goals, listing assets currently managed by the IT department, and completing a risk assessment. The goal of the audit is to provide an overview of the risks and/or fines that the company might experience due to the current state of their security posture.
 
-To address this security event, the network security team implemented:
+## Key Activities
 
-- A new firewall rule to limit the rate of incoming ICMP packets
+1. Review Botium Toys: Scope, goals, and risk assessment report, with a focus on:
 
-- Source IP address verification on the firewall to check for spoofed IP addresses on incoming ICMP packets
+   - The assets currently managed by the IT department
+   - The bullet points under “Additional comments” in the Risk assessment section
 
-- Network monitoring software to detect abnormal traffic patterns
+2. Used the Controls Categories document to assess security posture and ensure compliance.
+3. Completed a comprehensive compliance checklist, identifying key security gaps
 
-- An IDS/IPS system to filter out some ICMP traffic based on suspicious characteristics
+## Results
 
-## Steps
-
-Use the CSF to navigate through the different steps of analyzing this cybersecurity event and integrate analysis into a general security strategy.
-
-- **Identify** security risks through regular audits of internal networks, systems, devices, and access privileges to identify potential gaps in security.
-
-- **Protect** internal assets through the implementation of policies, procedures, training and tools that help mitigate cybersecurity threats.
-
-- **Detect** potential security incidents and improve monitoring capabilities to increase the speed and efficiency of detections.
-
-- **Respond** to contain, neutralize, and analyze security incidents; implement improvements to the security process.
-
-- **Recover** affected systems to normal operation and restore systems data and/or assets that have been affected by an incident.
-
-## Outcomes
-
-- Gained a deeper understanding of the critical role of firewall configurations, traffic monitoring, and incident response in mitigating cybersecurity threats.
-- Further solidifying my ability to analyze and handle cybersecurity incidents using the NIST CSF framework
+Successfully completed the security audit, providing a detailed compliance checklist and actionable recommendations to improve the company's security posture. <br>
+<a href="https://hoangnguyen2809.github.io/files/Controls-and-compliance-checklist.pdf" download="Controls-and-compliance-checklist.pdf">
+Download Checklist
+</a>
 
 <br>
-<a href="https://hoangnguyen2809.github.io/files/Incident-report-analysis.pdf" download="Incident-report-analysis.pdf">
-Download Incident Report
-</a>
+This project enhanced my understanding of IT asset management and security compliance. I plan to continue developing my auditing and risk assessment skills.
 
 ## Resources
 
-[Applying the NIST CSF](https://docs.google.com/document/d/15yCDbDCOAcJw-LTz2DeCA7UeLRfvsf176T6MA6ku6ok/template/preview)
+[Botium Toys: Scope, goals, and risk assessment report](https://docs.google.com/document/d/1s2u_RuhRAI40JSh-eZHvaFsV1ZMxcNSWXifHDTOsgFc/template/preview#heading=h.evidx83t54sc)
+
+[Control categories](https://docs.google.com/document/d/1HsIw5HNDbRXzW7pmhPLsK06B7HF-KMifENO_TlccbSU/template/preview)
