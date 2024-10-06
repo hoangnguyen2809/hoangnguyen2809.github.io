@@ -36,7 +36,7 @@ The IT manager starts by implementing the National Institute of Standards and Te
 
 Successfully completed the security audit, providing a detailed compliance checklist and actionable recommendations to improve the company's security posture. <br>
 <a href="https://hoangnguyen2809.github.io/files/Controls-and-compliance-checklist.pdf" download="Controls-and-compliance-checklist.pdf">
-Controls and Compliance Checklist PDF
+Download Checklist
 </a>
 
 <br>
