@@ -1,6 +1,6 @@
 ---
 title: "NIST CF Security Incident Report"
-excerpt: "Applied the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF) to conduct a mock incident report on DDoS attack, as part of Google's Cybersecurity Certificate program. <br /><img src='/images/in-re.png'>"
+excerpt: "Applied the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF) to conduct a mock incident report on DDoS attack, as part of Google's Cybersecurity Certificate program. <br/>"
 collection: portfolio
 ---
 
