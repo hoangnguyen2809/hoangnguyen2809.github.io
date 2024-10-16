@@ -5,11 +5,11 @@ permalink: /projects/
 author_profile: true
 ---
 
-### PageRank [Github](https://github.com/hoangnguyen2809/page_rank)
+### PageRank Multithreading(C++) [Github](https://github.com/hoangnguyen2809/page_rank)
 
 Simon Fraser University, CMPT 431 - Fall 2024
 
-### Producer-Consumer Problem [Github](https://github.com/hoangnguyen2809/producer_consumer)
+### Producer-Consumer Multithreading(C++)[Github](https://github.com/hoangnguyen2809/producer_consumer)
 
 Simon Fraser University, CMPT 431 - Fall 2024
 
