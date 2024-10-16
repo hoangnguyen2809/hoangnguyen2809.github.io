@@ -11,33 +11,36 @@ redirect_from:
 
 # Education
 
-- B.S. Computer Science, Simon Fraser University - January 2021
-  - Expected graduation: 2025
+- B.S. Computer Science, Simon Fraser University
+
   - Relevant coursework: Operating Systems, Data Structures and Algorithms, Computer Networking, Database Systems, Distributed Systems
 
-# Volunteer experience
-
-- December 2023 - Present: Web Development Coordinator
-  - Enactus, Simon Fraser University
-  - Duties includes: Implement BeeKind.Co’s - a user-friendly website, showcasing sustainable candle products and community initiatives.
-  - Website url: [BeeKind](https://thebeekind.company/)
+- UTP Stage II: Computer Science, Fraser International College (Transferred)
 
 # Skills
 
 - Programming Languages: C, C++, Python, Java, P4
 - Networking/Cybersecurity tools: Wireshark, TCPdump, Mininet, pcap
 - Web Development: HTML, CSS, JavaScript, Angular
-- Developer Tools: Git, Github, Visual Studio, Visual Studio Code, Android Studio, AWS
-- Operating System: Window, Linux
-- Soft Skills:
-  - Adaptability
-  - Problem-Solving
-  - Team Collaboration
-  - Creativity
+- Developer Tools: Github, Visual Studio, Visual Studio Code
+- Operating System: Window, Linux, Kali
 - Human Languages:
   - Vietnamese
   - English
-  - Chinese
+
+# Volunteer experience
+
+- December 2023 - April 2024: Web Development Coordinator
+  - Enactus SFU, Burnaby, BC
+  - Duties includes:
+    - Implement BeeKind.Co’s - a user-friendly website, showcasing sustainable candle products and community initiatives.
+    - Collaborated seamlessly with a web development team and design team, utilizing Git for effective version control, and ensuring a streamlined and collaborative coding environment
+  - Website url: [BeeKind](https://thebeekind.company/)
+
+# Competition
+
+- Canada's Cyber Security Challenge (Regional), November 2024
+  - SFU Team - Participant
 
 # Other work experience:
 
