@@ -15,6 +15,8 @@ Simon Fraser University, CMPT 431 - Fall 2024
 
 ### Buffer-Overflow Attack Lab (Server Version) [GitHub](https://github.com/hoangnguyen2809/SEED_buffer_overflow) [Report](https://hoangnguyen2809.github.io/posts/2024/07/blog-post-5/)
 
+July 2024
+
 ### Chitchat(Golang) [Github](https://github.com/hoangnguyen2809/Chitchat)
 
 June 2024
