@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: ""
+title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -41,10 +41,3 @@ redirect_from:
 
 - Canada's Cyber Security Challenge (Regional), November 2024
   - SFU Team - Participant
-
-# Other work experience:
-
-- December 2022 – February 2023: Waiter
-  - Pho 101 – Burnaby, BC
-- May 2021 – April 2022: Cook
-  - Viet House - Vancouver, BC
