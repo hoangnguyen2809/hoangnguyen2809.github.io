@@ -5,7 +5,11 @@ permalink: /projects/
 author_profile: true
 ---
 
-### Producer-Consumer Problem (Distributed Systems) [Github](https://github.com/hoangnguyen2809/producer_consumer)
+### PageRank [Github](https://github.com/hoangnguyen2809/page_rank)
+
+Simon Fraser University, CMPT 431 - Fall 2024
+
+### Producer-Consumer Problem [Github](https://github.com/hoangnguyen2809/producer_consumer)
 
 Simon Fraser University, CMPT 431 - Fall 2024
 
