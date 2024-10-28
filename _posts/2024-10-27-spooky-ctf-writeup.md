@@ -1,5 +1,5 @@
 ---
-title: "Spooky CTF Writeups"
+title: "SpookyCTF 2024 Writeups"
 date: 2024-10-27
 permalink: /posts/2024/10/spooky-ctf-wu/
 tags:
@@ -16,10 +16,11 @@ CTF Platform: https://spookyctf.ctfd.io/
 - This is the second CTF challenge that I participated along with my SFU fellas. We have been participating in the CTF challenge since early October to prepare for the Canada Cyber ​​​​Challenge Regional which took place on November 23.
 - Our team took this challenge on the last day, so we couldn't get full marks for every question as the marks would decrease as more people answered. So in the end, we ranked 95/832.
 - This write-up contains the questions I was able to solve during the challenge. I have created this write-up to save and use for reference for future challenges.
+- Thanks to NICC for creating this amazing CTF challenge!
 
 ## Open-Source Intelligence
 
-1. among-us
+### among-us
 
 <img src='/images/amongus.png'>
 
@@ -29,7 +30,7 @@ CTF Platform: https://spookyctf.ctfd.io/
 
 Flag: **NICC{The_Wolf_Among_Us_Lucky_Pawn}**
 
-2. perfect-nba-fit
+### perfect-nba-fit
 
 <img src='/images/perfectnbafit.png'>
 
@@ -41,7 +42,7 @@ Flag: **NICC{20_18:40_Route-563_Chatsworth}**
 
 ## Miscellaneous
 
-1. Well-met
+### Well-met
 
 <img src='/images/wellmet.png'>
 
@@ -59,7 +60,7 @@ Flag: **NICC{StOrIeS_DoNt_MaKe_ThE_cTf_ToO_cTfY_rIgHt?}**
 
 ## Steganography
 
-1. devil's-secret-stash
+### devil's-secret-stash
 
 <img src='/images/devilsecret.png'>
 
@@ -70,7 +71,7 @@ Flag: **NICC{StOrIeS_DoNt_MaKe_ThE_cTf_ToO_cTfY_rIgHt?}**
 
 Flag: **NICC{J3rS3y_D3v1l_Arch1V3}**
 
-2. set-your-intentions-right
+### set-your-intentions-right
 
 <img src='/images/intention.png'>
 
@@ -81,7 +82,7 @@ Flag: **NICC{J3rS3y_D3v1l_Arch1V3}**
 
 Flag: **NICC{UR_4SAK3N_D3CISION}**
 
-3. Phenominal-Photo
+### Phenominal-Photo
 
 <img src='/images/pheno.png'>
 
@@ -111,7 +112,7 @@ REMINDER THAT OUR GPS IS A LITTLE FUNKY, IT ONLY TAKES THE FIRST LETTER OF EACH 
 
 Flag: **NICC{HELP_ME_FIND_THE_PLANET_B0O}**
 
-4. whispers-in-morse
+### whispers-in-morse
 
 <img src='/images/morse.png'>
 
@@ -125,7 +126,7 @@ Flag: **NICC{tHe_whIspeRz_iN_Th3_aiR}**
 
 ## Web
 
-1. cryptid-hunters
+### cryptid-hunters
 
 <img src='/images/crytidhunter.png'>
 
