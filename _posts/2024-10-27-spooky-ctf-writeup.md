@@ -10,10 +10,11 @@ tags:
 
 # Spooky CTF 2024 Write-ups
 
-Links:
+Links: <br>
 CTF Platform: https://spookyctf.ctfd.io/
 
-- This is the second CTF challenge that I participated along with my SFU fellas. We have been participating in the CTF challenge since early October to prepare for the Canada Cyber ​​​​Challenge Regional which took place on November 23. This time, we ranked 96/832.
+- This is the second CTF challenge that I participated along with my SFU fellas. We have been participating in the CTF challenge since early October to prepare for the Canada Cyber ​​​​Challenge Regional which took place on November 23.
+- Our team took this challenge on the last day, so we couldn't get full marks for every question as the marks would decrease as more people answered. So in the end, we ranked 95/832.
 - This write-up contains the questions I was able to solve during the challenge. I have created this write-up to save and use for reference for future challenges.
 
 ## Open-Source Intelligence
@@ -60,9 +61,55 @@ Flag: **NICC{StOrIeS_DoNt_MaKe_ThE_cTf_ToO_cTfY_rIgHt?}**
 
 1. devil's-secret-stash
 
+<img src='/images/devilsecret.png'>
+
+- Use binwalk on the image, I found that a section of a zip archive is encrypted at entry `0x3D18A`. So I use `binwalk -e` on the image to extract that zip archive.
+- Use johntheripper to crack the password of the zip file.
+- `zip2john 3D18A.zip > zip.hash` to extract the hash out. Then use `john zip.hash` to crack the password.
+- The password cracked was: 250250. Use it to extract 3D18A.zip file and get the flag. <br>
+
+Flag: **NICC{J3rS3y_D3v1l_Arch1V3}**
+
 2. set-your-intentions-right
 
+<img src='/images/intention.png'>
+
+- A mp3 file was given. I put the MP3 file into Sonic Visualizer to investigate.
+- By adding waveform and spectrogram to the original wave, the answer was found.
+
+<img src='/images/intentiona.png'>
+
+Flag: **NICC{UR_4SAK3N_D3CISION}**
+
 3. Phenominal-Photo
+
+<img src='/images/pheno.png'>
+
+- Use `steghide --info`, I found that an encrypted file is hidden in this image.
+
+<img src='/images/phenn.png'>
+
+- I extract the hidden file with empty password field and was able to get the zip file. The extracted folder contains another zip file that needed a password to extract and a Map.txt file:
+
+```
+⋔⏃⌿: ⌰⟒⎎⏁, ⎍⌿, ⎅⍜⍙⋏, ⌰⟒⎎⏁, ⎅⍜⍙⋏, ⍀⟟☌⊑⏁, ⍀⟟☌⊑⏁, ⎅⍜⍙⋏, ⌰⟒⎎⏁, ⎍⌿, ⌰⟒⎎⏁, ⍀⟟☌⊑⏁, ⎍⌿
+
+⍀⟒⋔⟟⋏⎅⟒⍀ ⏁⊑⏃⏁ ⍜⎍⍀ ☌⌿⌇ ⟟⌇ ⏃ ⌰⟟⏁⏁⌰⟒ ⎎⎍⋏☍⊬, ⟟⏁ ⍜⋏⌰⊬ ⏁⏃☍⟒⌇ ⏁⊑⟒ ⎎⟟⍀⌇⏁ ⌰⟒⏁⏁⟒⍀ ⍜⎎ ⟒⏃☊⊑ ⎅⟟⍀⟒☊⏁⟟⍜⋏ ⍙⟒ ⍙⏃⋏⏁ ⏁⍜ ☌⍜ (⌇⏁⎍⌿⟟⎅ ⋔⟒⋔⍜⍀⊬ ⋔⏃⋏⏃☌⟒⋔⟒⋏⏁)
+```
+
+- My teammate found out that this is alien language and we tried to decode it using alien language translator online:
+
+```
+MAP: LEFT, UP, DOWN, LEFT, DOWN, RIGHT, RIGHT, DOWN, LEFT, UP, LEFT, RIGHT, UP
+
+REMINDER THAT OUR GPS IS A LITTLE FUNKY, IT ONLY TAKES THE FIRST LETTER OF EACH DIRECTION WE WANT TO GO (STUPID MEMORY MANAGEMENT)
+```
+
+- From this translation, I can guess that the password of the file is: `LUDLDRRDLULRU`. Used the password to extract the zip file, I got a txt file: `⋏⟟☊☊{⊑⟒⌰⌿*⋔⟒*⎎⟟⋏⎅*⏁⊑⟒*⌿⌰⏃⋏⟒⏁_⏚0⍜}`
+- Put it in the translator again and the flag is captured.
+  <br>
+
+Flag: **NICC{HELP_ME_FIND_THE_PLANET_B0O}**
 
 4. whispers-in-morse
 
@@ -73,6 +120,7 @@ Flag: **NICC{StOrIeS_DoNt_MaKe_ThE_cTf_ToO_cTfY_rIgHt?}**
 - Knowing the password, I use steghide to extract decrypt data from the image using the password:
   `steghide extract -sf MaryMorse.jpg -p M.A.__.R.Y -xf output.txt`
 
+<br>
 Flag: **NICC{tHe_whIspeRz_iN_Th3_aiR}**
 
 ## Web
@@ -86,3 +134,7 @@ Flag: **NICC{tHe_whIspeRz_iN_Th3_aiR}**
 - Useful SQL injection payload resource: https://github.com/payloadbox/sql-injection-payload-list
 
 Flag: **NICC{1N_PuRSu1T_0F_4LL13S}**
+
+```
+
+```
