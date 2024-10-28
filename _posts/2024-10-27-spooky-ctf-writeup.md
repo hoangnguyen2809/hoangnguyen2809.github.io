@@ -8,6 +8,8 @@ tags:
   - cybersecurity
 ---
 
+NICC's SpookyCTF 2024 write-up
+
 # Spooky CTF 2024 Write-ups
 
 Links: <br>
