@@ -13,7 +13,7 @@ NICC's SpookyCTF 2024 write-up
 # Spooky CTF 2024 Write-ups
 
 Links: <br>
-CTF Platform: [https://spookyctf.ctfd.io/]
+CTF Platform: ()[https://spookyctf.ctfd.io/]
 
 - This is the second CTF challenge that I participated along with my SFU fellas. We have been participating in the CTF challenge since early October to prepare for the Canada Cyber ​​​​Challenge Regional which took place on November 23.
 - Our team took this challenge on the last day, so we couldn't get full marks for every question as the marks would decrease as more people answered. So in the end, we ranked 95/832.
@@ -134,6 +134,6 @@ Flag: **NICC{tHe_whIspeRz_iN_Th3_aiR}**
 
 - An IP was given that lead to a very simple website with login function. So the first thing came to my mind was SQL Injection.
 - I tried a basic payload: `' OR 1 -- -` and successfully logged into the site
-- Useful SQL injection payload resource: [https://github.com/payloadbox/sql-injection-payload-list]
+- Useful SQL injection payload resource: ()[https://github.com/payloadbox/sql-injection-payload-list]
 
 Flag: **NICC{1N_PuRSu1T_0F_4LL13S}**
