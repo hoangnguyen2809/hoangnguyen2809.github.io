@@ -67,3 +67,29 @@ Use a variety of OSINT techniques to solve the room created by the OSINT Dojo.
 - Based on their home wifi information on DEEP PASTE: "DK1F-G Fsdf324T@@". I performed a search on [Wigle](https://wigle.net/) with SSID being DK1F-G and was able to find their location which is close to Hirosaki as well as BSSID: **84:af:ec:34:fc:f8**
 
 <img src='/images/sakurawigle.png'>
+
+## Task 6
+
+- This is the last image they posted before they head home:
+
+<img src='/images/sakura_lastpost.png'>
+
+- At first, I was sure this is Japan because: 1/All of their informations lead to Japan and 2/I see a cherry blossom. I took a lot of time searching thourgh Japan airports but there was no result.
+- It was not until when I changed the searching object to the below picture, the result return that it is actually the Washington Monument:
+
+<img src='/images/dcmonument.png'>
+<img src='/images/monumentif.png'>
+
+- So I did a search for airports near the area and found Ronald Reagan Washington National Airport or **DCA**
+
+- The rest questions are much more easier. Here are the other two posts I used to find the answer to other questions:
+
+<img src='/images/haneda.png'>
+<img src='/images/lake.png'>
+
+- To find the last airport the attacker had their last layover in, I use Google with keyword: "JAL First Class Lounge Sakura Lounge" and there's only one airport that has the same lounge as in the picture which is Haneda airport - **HND**.
+- The name of the lake is **Lake Inawashiro**:
+
+<img src='/images/lakename.png'>
+
+- The attacker's hometown is **Hirosaki** because we know the location of their home wifi.
