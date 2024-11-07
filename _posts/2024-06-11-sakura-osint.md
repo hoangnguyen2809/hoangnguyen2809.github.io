@@ -49,7 +49,7 @@ Use a variety of OSINT techniques to solve the room created by the OSINT Dojo.
 
 ## Task 5
 
-- The attacker's current Twitter handle was already found at task 1: **SakuraLoverAiko**
+- The attacker's current Twitter handle was already found at task 2: **SakuraLoverAiko**
 
 <img src='/images/twittername.png'>
 
