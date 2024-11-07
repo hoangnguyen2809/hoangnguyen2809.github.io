@@ -58,11 +58,11 @@ Use a variety of OSINT techniques to solve the room created by the OSINT Dojo.
 <img src='/images/sakuraposts.png'>
 
 - Their post on 23th Jan, 2021 emphasized that: "Anyone who wants them will have to do a real DEEP search to find where I PASTEd them". So the website must be something related to DEEP PASTE, isn't it?
-- I actually found a website <a href="https://deepweblinks.net/pastebin/"></a> using Tor, but the links provided by the website no longer work. So the last solution is to use the hint image provided.
+- I actually found a website https://deepweblinks.net/pastebin/ using Tor, but the links provided by the website no longer work. So the last solution is to use the hint image provided.
 
 <img src='/images/sakurahint.png'>
 
-- The URL for the location where the attacker saved their WiFi SSIDs and passwords is: **<a href="http://deepv2w7p33xa4pwxzwi2ps4j62gfxpyp44ezjbmpttxz3owlsp4ljid.onion"></a>**
+- The URL for the location where the attacker saved their WiFi SSIDs and passwords is: **http://deepv2w7p33xa4pwxzwi2ps4j62gfxpyp44ezjbmpttxz3owlsp4ljid.onion**
 
 - Based on their home wifi information on DEEP PASTE: "DK1F-G Fsdf324T@@". I performed a search on [Wigle](https://wigle.net/) with SSID being DK1F-G and was able to find their location which is close to Hirosaki as well as BSSID: **84:af:ec:34:fc:f8**
 
