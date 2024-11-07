@@ -48,3 +48,18 @@ Use a variety of OSINT techniques to solve the room created by the OSINT Dojo.
 <img src='/images/sakuratether.png'>
 
 ## Task 5
+
+- The attacker's current Twitter handle was already found at task 1: **SakuraLoverAiko**
+
+<img src='/images/twittername.png'>
+
+- From the attacker's posts on Twitter, it looks like they store they Regular wifi and passwords somewhere on the Dark Web.
+
+<img src='/images/sakuraposts.png'>
+
+- Their post on 23th Jan, 2021 emphasized that: "Anyone who wants them will have to do a real DEEP search to find where I PASTEd them". So the website must be something related to DEEP PASTE, isn't it?
+- I actually found a website <a href="https://deepweblinks.net/pastebin/"></a> using Tor, but the links provided by the website no longer work. So the last solution is to use the hint image provided.
+
+<img src='/images/sakurahint.png'>
+
+- The URL for the location where the attacker saved their WiFi SSIDs and passwords is: <a href="http://deepv2w7p33xa4pwxzwi2ps4j62gfxpyp44ezjbmpttxz3owlsp4ljid.onion"></a>
