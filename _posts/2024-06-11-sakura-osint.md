@@ -62,4 +62,8 @@ Use a variety of OSINT techniques to solve the room created by the OSINT Dojo.
 
 <img src='/images/sakurahint.png'>
 
-- The URL for the location where the attacker saved their WiFi SSIDs and passwords is: <a href="http://deepv2w7p33xa4pwxzwi2ps4j62gfxpyp44ezjbmpttxz3owlsp4ljid.onion"></a>
+- The URL for the location where the attacker saved their WiFi SSIDs and passwords is: **<a href="http://deepv2w7p33xa4pwxzwi2ps4j62gfxpyp44ezjbmpttxz3owlsp4ljid.onion"></a>**
+
+- Based on their home wifi information on DEEP PASTE: "DK1F-G Fsdf324T@@". I performed a search on [Wigle](https://wigle.net/) with SSID being DK1F-G and was able to find their location which is close to Hirosaki as well as BSSID: **84:af:ec:34:fc:f8**
+
+<img src='/images/sakurawigle.png'>
