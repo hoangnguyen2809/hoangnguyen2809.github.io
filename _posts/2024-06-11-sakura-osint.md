@@ -1,7 +1,7 @@
 ---
 title: "Sakura Room Writeups - TryHackMe"
 date: 2024-11-06
-permalink: /posts/2024/10/spooky-ctf-wu/
+permalink: /posts/2024/10/sakura-room-writeup/
 tags:
   - OSINTDojo
   - ctf
