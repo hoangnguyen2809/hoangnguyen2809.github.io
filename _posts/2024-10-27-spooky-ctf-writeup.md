@@ -13,7 +13,7 @@ NICC's SpookyCTF 2024 write-up
 # Spooky CTF 2024 Write-ups
 
 Links: <br>
-CTF Platform: ()[https://spookyctf.ctfd.io/]
+CTF Platform: (https://spookyctf.ctfd.io/)[https://spookyctf.ctfd.io/]
 
 - This is the second CTF challenge that I participated along with my SFU fellas. We have been participating in the CTF challenge since early October to prepare for the Canada Cyber ​​​​Challenge Regional which took place on November 23.
 - Our team took this challenge on the last day, so we couldn't get full marks for every question as the marks would decrease as more people answered. So in the end, we ranked 95/832.
