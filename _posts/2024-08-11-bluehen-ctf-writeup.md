@@ -5,9 +5,10 @@ permalink: /posts/2024/10/bluehen-ctf/
 tags:
   - ctf
   - cybersecurity
+  - OSINT
 ---
 
-Writeup questions I solved in Bluehens CTF 2024
+Writeup for OSINT questions I solved in Bluehens CTF 2024
 
 Links: <br>
 CTF Platform: (https://bluehens.ctfd.io/)[https://bluehens.ctfd.io/]
@@ -33,7 +34,7 @@ Flag: **udctf{marcecko_wlj80f}**
 <img src='/images/hungry.png'>
 <img src='/images/fball.jpg'>
 
-- There is a text given inside the image “bswmrsvpjqtlbebwgawpnouxmtlpgjwfwbjswyj”. I put this text on dcode saw that it was a Vigenere Cipher. But in order to decode the Vigenere Cipher, I need to know the key/password.
+- There is a text given inside the image “bswmrsvpjqtlbebwgawpnouxmtlpgjwfwbjswyj”. I put this text on dcode saw that it was a Bellaso Cipher. But in order to decode the Bellaso Cipher, I need to know the key/password.
 - I use exiftool, binwalk and strings on the image to see if there any informations hidden inside the image. And strings return some information about a book:
 
 <img src='/images/book1.png'>
@@ -43,7 +44,7 @@ Flag: **udctf{marcecko_wlj80f}**
 
 <img src='/images/book2.png'>
 
-- Decoding the text “bswmrsvpjqtlbebwgawpnouxmtlpgjwfwbjswyj” with keyword "IL FINE" gives result: “threeoneeighttwotwoeighteightfourtwoone”.
+- I then use this public github repo (bellaso)[https://github.com/SEE-DS/bellaso] to decode the text “bswmrsvpjqtlbebwgawpnouxmtlpgjwfwbjswyj” with keyword "ILFINE" and got the result: “threeoneeighttwotwoeighteightfourtwoone”. (big thanks to the author)
 - I then searched the numbers "3182288421" on Google, and a chiken restaurant named Bayou Soul showed up. This was the point where I got stuck and did not know what to do. I tried the name of the restaurant as the flag but it was not correct.
 - After wasting a lot of time and nearly gave up, I discover that the name of the image file given play an important role in this question: "a_paper_football_player".
 - In paper football, a football player is also called "Flicker". I used (flickr)[https://www.flickr.com/] to search for "Bayou Soul". An account name Bayou Soul which was created on 11 November showed up:
