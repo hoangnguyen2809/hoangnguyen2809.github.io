@@ -1,45 +1,93 @@
 ---
-title: "THM - OSINT Investigation (Sakura Room)"
-excerpt: "Track down an attacker by analyzing publicly available data across multiple platforms. Throughout the challenge, I used real-world OSINT methodologies to uncover a digital trail left behind. <br/>"
+title: "Network Security Attacks and Countermeasures"
+excerpt: "SEED Lab – TCP/IP Attack Lab done by Hoang Nguyen.<br/>"
 collection: portfolio
 ---
 
 # Overview
 
-The Sakura Room on TryHackMe is an OSINT (Open Source Intelligence) challenge created by OSINT Dojo. The goal was to track down a fictional attacker by analyzing publicly available data across multiple platforms. Throughout the challenge, I used real-world OSINT methodologies to uncover a digital trail left behind.
+Conducted a series of network security attacks and countermeasures as part of an in-depth lab exercise. These tasks provided hands-on experience with TCP SYN Flooding, TCP RST attacks, and TCP Session Hijacking using tools such as Netwox, Wireshark, and Scapy. This portfolio entry details the process, results, and key learnings from these tasks.
 
-## Tools Used
+<img src='/images/nwdiagram.png'>
 
-- Metadata analysis (ExifTool)
+## Task 1: TCP SYN Flooding Attack
 
-- Cross-platform username tracking
+Objective: Demonstrate a TCP SYN flooding attack on a telnet server, analyze its impact, and implement SYN cookie countermeasures.
 
-- PGP key extraction (via Kleopatra)
+### Steps:
 
-- Blockchain tracing (Ethereum & Tether)
+1. **SYN Flood Attack Execution:**
 
-- Tor network navigation (.onion URLs)
+   - Utilized Netwox tool #76 to send numerous SYN packets to the victim machine without completing the TCP handshake.
+   - Command used: `netwox 76 -i <target IP> -p <target port>`
 
-- Wi-Fi geolocation (Wigle.net)
+2. **Packet Capture:**
 
-- Visual geolocation (reverse image search)
+   - Employed Wireshark to capture and analyze the traffic generated during the attack.
 
-## Finding
+3. **System Monitoring:**
 
-- Alias: SakuraSnowAngelAiko
+   - Ran `netstat -tna` on the victim machine before and during the attack to observe changes in the network connections.
 
-- Real Name: Aiko Abe
+4. **SYN Cookie Countermeasure:**
+   - Enabled and disabled SYN cookies using `sudo sysctl -w net.ipv4.tcp_syncookies=1` (on) and `sudo sysctl -w net.ipv4.tcp_syncookies=0` (off) to evaluate their effectiveness.
 
-- Email: SakuraSnowAngel83@protonmail.com
+### Results and Analysis:
 
-- Wallet: 0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef
+- **Success Indicators**: High number of half-open connections (SYN_RECV state) indicated a successful attack when SYN cookies were off.
+- **Netwox Command**: Successfully initiated attack with `netwox 76 -i <target IP> -p <target port>`
+- **Netstat and Wireshark Outputs**: Screenshots showed increased SYN_RECV states without SYN cookies. With SYN cookies on, normal connection states were maintained.
+- **Established Connections**: Pre-existing TCP sessions were unaffected during the SYN flood.
+- **Effectiveness of SYN Cookies**: The mechanism prevented half-open connections, mitigating the attack impact.
 
-- Home Location: Hirosaki, Japan
+## Task 2: TCP RST Attack
 
-- Travel Path: Washington D.C. (DCA) → Tokyo Haneda (HND) → Hirosaki
+Objective: Terminate active telnet and ssh sessions by injecting TCP RST packets.
 
-## Key Takeaways
+### Steps:
 
-This challenge refined my ability to collect, correlate, and analyze open-source data across multiple platforms. It reinforced the importance of metadata, historical data, and alternative platforms (e.g., Tor) in cyber investigations.
+1. **Packet Construction with Scapy:**
 
-[Read Full Writeup](https://hoangnguyen2809.github.io/posts/2024/10/sakura-room-writeup/)
+   - Modified necessary header fields (source IP, destination IP, sequence numbers, and acknowledgment numbers) to craft the RST packets.
+
+2. **Attack Execution:**
+   - Injected RST packets to disrupt active telnet and ssh connections.
+
+### Results and Analysis:
+
+- **Header Fields:** Correctly calculated sequence and acknowledgment numbers.
+- **Session Disruption:** Successfully terminated telnet sessions. SSH sessions showed resilience due to encryption.
+- **Screenshots:** Documented steps and results.
+- **LAN Dependency:** Attack efficacy reduced if attacker and victim are not on the same LAN due to difficulty in sequence number prediction and packet injection.
+
+## Task 3: TCP Session Hijacking Attack
+
+Objective: Inject malicious commands into an active telnet session to delete a specific file on the server.
+
+### Steps:
+
+1. **Packet Construction with Scapy:**
+
+   - Modified TCP header fields to synchronize with the active telnet session.
+   - Command injected: `rm /home/seed/myfile.txt`
+
+2. **Attack Execution:**
+   - Successfully injected packets to delete the target file.
+
+### Results and Analysis:
+
+- **Header Fields:** Sequence and acknowledgment numbers carefully calculated for successful injection.
+- **Packet Capture:** Wireshark capture confirmed the injection.
+- **SSH Session Hijacking:** Infeasible due to encryption preventing command injection.
+- **Observations:** Demonstrated the vulnerability of unencrypted telnet sessions to hijacking.
+
+# Conclusion
+
+These tasks provided a comprehensive understanding of network attack mechanisms and defense strategies. Successfully conducting these attacks and implementing countermeasures showcased my proficiency in network security, use of advanced tools like Netwox, Wireshark, and Scapy, and understanding of TCP/IP protocols. This experience is a testament to my capability to analyze, execute, and mitigate real-world network security threats.
+
+## Supporting Documents:
+
+task2.py: Scapy script for TCP RST attack. <br>
+task3.py: Scapy script for TCP session hijacking. <br>
+Files are available [Github](https://github.com/hoangnguyen2809/TCP-Attack-Lab) <br>
+Report: Detailed instructions, results, and analysis of the tasks at [REPORT](https://hoangnguyen2809.github.io/posts/2024/04/blog-post-4/)
