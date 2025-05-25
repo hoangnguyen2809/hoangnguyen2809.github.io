@@ -42,7 +42,14 @@ redirect_from:
 - Canada's Cyber Security Challenge (Regional), November 2024
 
   - SFU Team - Participant
+  - Ranked 6th
 
 - DEADFACE CTF 2024
+
   - Read Leaf - Team Member
-  - Ranked 270
+  - Ranked 270th
+
+- Block CTF
+- USC CTF Fall 2024
+- BlueHens CTF 2024
+- Spooky CTF 2024
