@@ -13,7 +13,7 @@ redirect_from:
 
 - B.S. Computer Science, Simon Fraser University
 
-  - Relevant coursework: Operating Systems, Data Structures and Algorithms, Computer Networking, Database Systems, Distributed Systems
+  - Relevant coursework: Operating Systems, Data Structures and Algorithms, Computer Networking, Database Systems, Cryptography, Distributed Systems
 
 - UTP Stage II: Computer Science, Fraser International College (Transferred)
 
