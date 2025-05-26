@@ -40,6 +40,6 @@ The Sakura Room on TryHackMe is an OSINT (Open Source Intelligence) challenge cr
 
 ## Key Takeaways
 
-This challenge refined my ability to collect, correlate, and analyze open-source data across multiple platforms. It reinforced the importance of metadata, historical data, and alternative platforms (e.g., Tor) in cyber investigations.
+This challenge refined my ability to collect, correlate, and analyze open-source data across multiple platforms. It reinforced the importance of metadata, historical data, and alternative platforms in cyber investigations.
 
 [Read Full Writeup](https://hoangnguyen2809.github.io/posts/2024/10/sakura-room-writeup/)
