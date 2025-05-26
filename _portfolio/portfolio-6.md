@@ -23,6 +23,8 @@ This project involves the creation of a virtualized penetration testing environm
 - Vulnerability scanner Nessus
 - Documentation and analysis of attack paths and mitigation strategies
 
+(to be continued...)
+
 ## Key Takeaways
 
 Gained practical experience in reconnaissance, vulnerability scanning, and exploitation using industry-standard tools like Nmap, Metasploit. Learned to identify and assess vulnerable services (e.g., SMB, FTP, HTTP) on target machines through version scanning and targeted Nmap scripts.
