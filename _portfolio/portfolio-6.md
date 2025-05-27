@@ -18,15 +18,20 @@ This project involves the creation of a virtualized penetration testing environm
 
 ## Tools
 
-- Network, service discovery with Nmap
-- Vulnerability detection using targeted NSE scripts
-- Vulnerability scanner Nessus
-- Documentation and analysis of attack paths and mitigation strategies
+- Nmap – for network and service discovery
 
-(to be continued...)
+- Nmap Scripting Engine (NSE) – to run targeted vulnerability checks
+
+- Nessus – for in-depth vulnerability scanning and reporting
+
+- Metasploit Framework – for exploiting identified vulnerabilities and post-exploitation
 
 ## Key Takeaways
 
-Gained practical experience in reconnaissance, vulnerability scanning, and exploitation using industry-standard tools like Nmap, Metasploit. Learned to identify and assess vulnerable services (e.g., SMB, FTP, HTTP) on target machines through version scanning and targeted Nmap scripts.
+- Developed hands-on proficiency in the penetration testing kill chain: reconnaissance → scanning → exploitation
+
+- Practiced using industry-standard tools to simulate real-world attack scenarios in a safe environment
+
+- Gained insight into system misconfigurations and exploitable weaknesses in outdated OS platforms
 
 [Read Full Writeup](https://hoangnguyen2809.github.io/posts/2025/05/vultest/)
