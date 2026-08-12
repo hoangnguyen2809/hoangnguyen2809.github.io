@@ -17,13 +17,13 @@ Simon Fraser University, CMPT 431 - Fall 2024
 
 July 2024
 
-### Chitchat(Golang) [Github](https://github.com/hoangnguyen2809/Chitchat)
+<!-- ### Chitchat(Golang) [Github](https://github.com/hoangnguyen2809/Chitchat)
 
-June 2024
+June 2024 -->
 
-### Folder organizer (C++) [Github](https://github.com/hoangnguyen2809/files-organizer)
+<!-- ### Folder organizer (C++) [Github](https://github.com/hoangnguyen2809/files-organizer)
 
-May 2024
+May 2024 -->
 
 ### Firewall and Intrusion Detection System (Python, P4) [Github](https://github.com/hoangnguyen2809/Firewall-IDS)
 
@@ -49,7 +49,7 @@ January 2024 - April 2024
 
 September 2023 - December 2023
 
-### Tetris (C++, raylib) [Github](https://github.com/hoangnguyen2809/Tetris)
+<!-- ### Tetris (C++, raylib) [Github](https://github.com/hoangnguyen2809/Tetris)
 
 August 2023 - August 2023
 
@@ -59,4 +59,4 @@ May 2023 - June 2023
 
 ### School Management System (C++) [Github](https://github.com/hoangnguyen2809/SchoolManagementSystem)
 
-May 2020 - August 2020
+May 2020 - August 2020 -->
