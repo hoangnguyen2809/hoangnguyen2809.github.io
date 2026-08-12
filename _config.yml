@@ -23,10 +23,10 @@ author:
   # Biographic information
   avatar: "avatar.jpg"
   name: "Hoang Nguyen"
-  pronouns: # example: "she/her"
-  bio: "Student at Simon Fraser University"
+  pronouns: "he/him"
+  bio: "IT Support | IT Services Coordinator | Cybersecurity & Infrastructure"
   location: "Burnaby, BC, Canada"
-  employer: "Simon Fraser University"
+  employer: "Synapsis"
   uri: # URL
   email: "hvn3@sfu.ca"
 
