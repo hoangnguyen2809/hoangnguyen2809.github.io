@@ -1,5 +1,5 @@
 ---
-title: "Sakura Room Writeups - TryHackMe"
+title: "TryHackMe - Sakura"
 date: 2024-11-06
 permalink: /posts/2024/10/sakura-room-writeup/
 tags:
