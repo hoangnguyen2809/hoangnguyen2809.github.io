@@ -4,59 +4,193 @@ title: "Projects"
 permalink: /projects/
 author_profile: true
 ---
+{% include base_path %}
 
-### PageRank Multithreading(C++) [Github](https://github.com/hoangnguyen2809/page_rank)
+A collection of projects and hands-on labs focused on **cybersecurity, infrastructure, networking, systems programming, and software development**.
 
-Simon Fraser University, CMPT 431 - Fall 2024
+---
 
-### Producer-Consumer Multithreading(C++)[Github](https://github.com/hoangnguyen2809/producer_consumer)
+# Cybersecurity & Infrastructure
 
-Simon Fraser University, CMPT 431 - Fall 2024
+## Internal Penetration Testing Lab
 
-### Buffer-Overflow Attack Lab (Server Version) [GitHub](https://github.com/hoangnguyen2809/SEED_buffer_overflow) [Report](https://hoangnguyen2809.github.io/posts/2024/07/blog-post-5/)
+Built an isolated penetration-testing environment using **Kali Linux, Metasploitable 2, and Windows** to practice vulnerability assessment, exploitation, and post-exploitation techniques in a controlled environment.
 
-July 2024
+**Technologies:** Kali Linux · Nmap · Nessus · Metasploit · VMware · Windows
 
-<!-- ### Chitchat(Golang) [Github](https://github.com/hoangnguyen2809/Chitchat)
+* Designed and configured an isolated virtual network for offensive security testing.
+* Performed host discovery, port scanning, service enumeration, and vulnerability assessment.
+* Identified and validated exploitable vulnerabilities, including MS17-010.
+* Practiced exploitation and post-exploitation using Metasploit and Meterpreter.
+* Documented attack paths, findings, and defensive considerations.
 
-June 2024 -->
+[View Project](/portfolio/portfolio-6/) · [Technical Writeup](/posts/2025/05/vultest/)
 
-<!-- ### Folder organizer (C++) [Github](https://github.com/hoangnguyen2809/files-organizer)
+---
 
-May 2024 -->
+## Firewall and Intrusion Detection System
 
-### Firewall and Intrusion Detection System (Python, P4) [Github](https://github.com/hoangnguyen2809/Firewall-IDS)
+Implemented programmable network-security functionality using **P4 and Python**, combining packet filtering with intrusion-detection concepts.
 
-January 2024 - April 2024
+**Technologies:** P4 · Python · Mininet · Software-Defined Networking
 
-### Analyze attacks on TCP/IP [Github](https://github.com/hoangnguyen2809/TCP-Attack-Lab) [Report](https://hoangnguyen2809.github.io/posts/2024/04/blog-post-4/)
+* Developed packet-processing and traffic-control logic using P4.
+* Implemented firewall functionality for controlling network traffic.
+* Explored intrusion-detection techniques using programmable networking.
+* Tested network behavior in virtualized Mininet environments.
 
-January 2024 - April 2024
+[GitHub](https://github.com/hoangnguyen2809/Firewall-IDS)
 
-### Network Control Applications using SDN (Python, Mininet) [Github](https://github.com/hoangnguyen2809/471_SDN_project)
+---
 
-January 2024 - April 2024
+## Buffer Overflow Attack Lab
 
-### Simple Network Telemetry using Remote Procedure Calls (C++) [Github](https://github.com/hoangnguyen2809/471_RPC)
+Analyzed and exploited stack-based buffer overflow vulnerabilities in a controlled Linux environment as part of the SEED Security Labs.
 
-January 2024 - April 2024
+**Technologies:** Linux · C · GDB · Memory Exploitation · SEED Labs
 
-### Socket Programming and TCP Tunnel (C) [Github](https://github.com/hoangnguyen2809/TCP-Daytime-Client-and-Server)
+* Analyzed vulnerable programs and stack memory behavior.
+* Developed payloads to trigger and exploit buffer overflow vulnerabilities.
+* Studied the impact of common operating-system security mechanisms.
+* Evaluated protections and countermeasures against memory-corruption attacks.
 
-January 2024 - April 2024
+[GitHub](https://github.com/hoangnguyen2809/SEED_buffer_overflow) · [Technical Writeup](/posts/2024/07/blog-post-5/)
 
-### Nuisance Reporting Web (HTML, CSS, JS, Angular) [Github](https://github.com/hoangnguyen2809/Nuisance-Reporting)
+---
 
-September 2023 - December 2023
+## TCP/IP Attack and Defense Lab
 
-<!-- ### Tetris (C++, raylib) [Github](https://github.com/hoangnguyen2809/Tetris)
+Performed controlled attacks against TCP/IP protocols to understand network vulnerabilities and the mechanisms used to mitigate them.
 
-August 2023 - August 2023
+**Technologies:** Linux · TCP/IP · Wireshark · Scapy · SEED Labs
 
-### Sudoku on Android (Java, Android Studio) [Github](https://github.com/hoangnguyen2809/Android-Sudoku)
+* Performed TCP SYN flooding and analyzed its effect on network services.
+* Explored TCP reset and TCP session hijacking attacks.
+* Captured and analyzed network traffic during attack scenarios.
+* Evaluated protocol behavior and defensive countermeasures.
 
-May 2023 - June 2023
+[GitHub](https://github.com/hoangnguyen2809/TCP-Attack-Lab) · [Technical Writeup](/posts/2024/04/blog-post-4/)
 
-### School Management System (C++) [Github](https://github.com/hoangnguyen2809/SchoolManagementSystem)
+---
 
-May 2020 - August 2020 -->
+# Networking & Distributed Systems
+
+## Programmable Network Switch Using P4
+
+Implemented programmable network functionality using the **P4 programming language**, focusing on packet parsing, forwarding logic, and data-plane behavior.
+
+**Technologies:** P4 · Mininet · Software-Defined Networking · Linux
+
+* Defined custom packet-processing behavior using P4.
+* Worked with packet headers, parsing, match-action tables, and forwarding rules.
+* Tested programmable network behavior in a virtualized environment.
+* Applied software-defined networking concepts at the data-plane level.
+
+[View Project](/portfolio/portfolio-2/)
+
+---
+
+## Network Control Applications Using SDN
+
+Developed network-control applications using **Python and Mininet** to explore Software-Defined Networking concepts.
+
+**Technologies:** Python · Mininet · SDN · OpenFlow
+
+* Designed and tested programmable network-control logic.
+* Worked with virtual network topologies using Mininet.
+* Explored centralized network control and dynamic forwarding behavior.
+* Analyzed communication between the control and data planes.
+
+[GitHub](https://github.com/hoangnguyen2809/471_SDN_project)
+
+---
+
+## Simple Network Telemetry Using Remote Procedure Calls
+
+Implemented a network telemetry system using **C++ and Remote Procedure Calls** to collect and exchange information between distributed components.
+
+**Technologies:** C++ · RPC · Networking · Distributed Systems
+
+* Implemented communication between networked client and server components.
+* Used RPC mechanisms to exchange telemetry information.
+* Explored distributed communication and service-oriented program design.
+
+[GitHub](https://github.com/hoangnguyen2809/471_RPC)
+
+---
+
+## Socket Programming and TCP Tunnel
+
+Implemented TCP client/server applications and tunneling functionality using low-level socket programming in **C**.
+
+**Technologies:** C · TCP/IP · Socket Programming · Linux
+
+* Developed TCP client and server applications using Berkeley sockets.
+* Implemented network communication and connection handling.
+* Explored TCP tunneling and application-layer data forwarding.
+* Gained hands-on experience with low-level network programming.
+
+[GitHub](https://github.com/hoangnguyen2809/TCP-Daytime-Client-and-Server)
+
+---
+
+# Systems & Concurrent Programming
+
+## Multithreaded PageRank
+
+Implemented the PageRank algorithm in **C++** with multithreading to explore parallelism, synchronization, and performance in concurrent applications.
+
+**Technologies:** C++ · Multithreading · Concurrency · Algorithms
+
+* Implemented PageRank computation for graph-based datasets.
+* Parallelized workload using multiple worker threads.
+* Applied synchronization techniques to safely coordinate shared data.
+* Analyzed the effect of concurrency on computational performance.
+
+[GitHub](https://github.com/hoangnguyen2809/page_rank)
+
+---
+
+## Producer–Consumer Multithreading
+
+Implemented the classic producer-consumer synchronization problem using **C++ multithreading**.
+
+**Technologies:** C++ · Multithreading · Synchronization · Concurrency
+
+* Implemented concurrent producer and consumer workers.
+* Coordinated access to shared resources using synchronization primitives.
+* Explored race conditions, mutual exclusion, and thread coordination.
+* Applied operating-system concurrency concepts in a practical implementation.
+
+[GitHub](https://github.com/hoangnguyen2809/producer_consumer)
+
+---
+
+# Software Development
+
+## Chitchat
+
+Developed a networked chat application using **Go**, focusing on client-server communication and concurrent connection handling.
+
+**Technologies:** Go · Networking · Client-Server Architecture · Concurrency
+
+* Implemented communication between multiple networked clients.
+* Applied Go concurrency concepts for handling connections.
+* Developed core messaging and connection-management functionality.
+
+[GitHub](https://github.com/hoangnguyen2809/Chitchat)
+
+---
+
+## Nuisance Reporting Web Application
+
+Developed a web application for submitting and managing nuisance reports.
+
+**Technologies:** Angular · JavaScript · HTML · CSS
+
+* Built interactive web interfaces using Angular.
+* Implemented client-side functionality for creating and managing reports.
+* Applied component-based web-development principles.
+
+[GitHub](https://github.com/hoangnguyen2809/Nuisance-Reporting)
+
