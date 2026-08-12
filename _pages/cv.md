@@ -85,9 +85,11 @@ redirect_from:
 
 ## Enactus SFU
 
+*Burnaby, BC*
+
 ### Web Development Coordinator
 
-*Burnaby, BC | December 2023 – April 2024*
+*December 2023 – April 2024*
 
 * Contributed to the development of the **BeeKind** website, showcasing sustainable candle products and community initiatives.
 * Collaborated with web development and design teams to implement and refine website functionality and presentation.
