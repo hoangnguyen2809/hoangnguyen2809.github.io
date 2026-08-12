@@ -76,9 +76,7 @@ redirect_from:
 
 *Relevant Coursework:* Operating Systems, Data Structures and Algorithms, Computer Networks, Database Systems, Cryptography, Distributed Systems
 
-### Fraser International College
-
-**University Transfer Program Stage II — Computing Science**
+### Fraser International College - University Transfer Program Stage II — Computing Science
 
 ---
 
